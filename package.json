@@ -19,7 +19,8 @@
   },
   "homepage": "https://github.com/lifeBalance/express-tour#readme",
   "dependencies": {
-    "express": "^4.13.3"
+    "express": "^4.13.3",
+    "lodash": "^3.10.1"
   },
   "devDependencies": {
     "nodemon": "^1.8.1"

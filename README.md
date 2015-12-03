@@ -2,10 +2,12 @@
 In this project I'm gonna be exploring the [Express.js][1] framework, starting with the simplest *"Hello World!"* app and working my way up to more interesting stuff.
 
 * [Hello World!][l1]
+* [Routing][l2]
 
 
 <!-- links list -->
 [l1]: README/hello-world.md
+[l2]: README/routing.md
 
 
 ---
