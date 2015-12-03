@@ -1,0 +1,27 @@
+{
+  "name": "express-tour",
+  "version": "1.0.0",
+  "description": "In this project I'm gonna be exploring the [Express.js][l1] framework, so first things first let's initialize a `package.json` file:",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lifeBalance/express-tour.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lifeBalance/express-tour/issues"
+  },
+  "homepage": "https://github.com/lifeBalance/express-tour#readme",
+  "dependencies": {
+    "express": "^4.13.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.8.1"
+  }
+}
