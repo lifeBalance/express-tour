@@ -3,11 +3,13 @@ In this project I'm gonna be exploring the [Express.js][1] framework, starting w
 
 * [Hello World!][l1]
 * [Routing][l2]
+* [Templates][l3]
 
 
 <!-- links list -->
 [l1]: README/hello-world.md
 [l2]: README/routing.md
+[l3]: README/templates.md
 
 
 ---

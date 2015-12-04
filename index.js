@@ -2,6 +2,7 @@ var express = require('express');
 var app = express();
 var fs = require('fs');
 var _ = require('lodash');
+var engines = require('consolidate');
 var users = [];
 
 // Reading from our JSON file
@@ -14,24 +15,20 @@ fs.readFile('users.json', {encoding: 'utf8'}, function (err, data) {
   });
 });
 
-app.get('/', function (req, res) {
-  var linkList = '';
-  users.forEach(function (user) {
-    linkList += '<a href="/' + user.username + '" >' + user.name.full + '</a><br>';
-  });
-  res.send(linkList);
-});
+// Templating engine
+app.engine('hbs', engines.handlebars);
 
-// Using regular expressions in routes
-app.get(/big.*/, function (req, res, next) {
-  console.log('BIG USER ACCESS');
-  next(); // Passing control to the next route handler
+app.set('views', './views');
+app.set('view engine', 'hbs');
+
+app.get('/', function (req, res) {
+  res.render('index', {users: users});
 });
 
 // Using path variables
 app.get('/:username', function (req, res) {
   var username = req.params.username;
-  res.send('<h1>' + username + '</h1>');
+  res.render('user.jade', {user: username});
 });
 
 var server = app.listen(3000, function () {

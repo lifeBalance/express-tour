@@ -129,7 +129,7 @@ $ npm run dev
 <!-- navigation -->
 [home]: ../README.md
 [back]: hello-world.md
-[next]: #
+[next]: templates.md
 
 <!-- links -->
 [1]: http://expressjs.com/en/index.html
