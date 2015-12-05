@@ -21,6 +21,12 @@ app.engine('hbs', engines.handlebars);
 app.set('views', './views');
 app.set('view engine', 'hbs');
 
+
+// Static Files
+app.use('/profile-pics', express.static('images'));
+
+
+// Routes
 app.get('/', function (req, res) {
   res.render('index', {users: users});
 });
@@ -28,7 +34,7 @@ app.get('/', function (req, res) {
 // Using path variables
 app.get('/:username', function (req, res) {
   var username = req.params.username;
-  res.render('user.jade', {user: username});
+  res.render('user', {user: username});
 });
 
 var server = app.listen(3000, function () {
