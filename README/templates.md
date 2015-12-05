@@ -92,7 +92,7 @@ $ npm run dev
 <!-- navigation -->
 [home]: ../README.md
 [back]: routing.md
-[next]: #
+[next]: static-files.md
 
 <!-- links -->
 [1]: http://expressjs.com/en/index.html
