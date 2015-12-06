@@ -5,6 +5,7 @@ In this project I'm gonna be exploring the [Express.js][1] framework, starting w
 * [Routing][l2]
 * [Templates][l3]
 * [Serving Static Files][l4]
+* [HTTP Verbs][l5]
 
 
 <!-- links list -->
@@ -12,6 +13,7 @@ In this project I'm gonna be exploring the [Express.js][1] framework, starting w
 [l2]: README/routing.md
 [l3]: README/templates.md
 [l4]: README/static-files.md
+[l5]: README/http-verbs.md
 
 
 ---

@@ -40,7 +40,7 @@ $ npm run dev
 <!-- navigation -->
 [home]: ../README.md
 [back]: templates.md
-[next]: #
+[next]: http-verbs.md
 
 <!-- links -->
 [1]: http://expressjs.com/en/index.html
